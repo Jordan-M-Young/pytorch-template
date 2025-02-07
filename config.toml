@@ -1,5 +1,8 @@
-[hyperparams]
-    batch_size = 32
-    epochs = 5
 [data]
     test_size = 0.2
+[model]
+    save = False
+    save_path = './models
+    batch_size = 32
+    epochs = 5
+    model_name = "test"
