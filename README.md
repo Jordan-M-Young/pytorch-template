@@ -62,5 +62,5 @@ For formatting:
 poetry run ruff format
 ```
 
-To configure how ruff operates, see the `[tool.ruff]` sections of `pyproject.toml`.
+To configure how ruff operates, see the `[tool.ruff]` sections of `pyproject.toml`. For more info check out this [resource](https://andres.world/getting-started-with-ruff-and-poetry.html)
 
