@@ -1,14 +1,14 @@
 """Model classes and helper functions."""
 
-from torch.nn import Module, Linear, Sigmoid, ReLU, Dropout, Sequential
-from torch import Tensor
+from torch import Tensor, save
+from torch.nn import Dropout, Linear, Module, ReLU, Sequential, Sigmoid
 
 
 class CustomModel(Module):
-    """Trivial CustomModel Template"""
+    """Trivial CustomModel Template."""
 
     def __init__(self):
-        """Initialize CustomModel"""
+        """Initialize CustomModel."""
         super(CustomModel, self).__init__()
 
         self.fc1 = Linear(2, 5)
@@ -23,3 +23,8 @@ class CustomModel(Module):
         """Forward pass function."""
         output = self.net(x)
         return output
+
+
+def save_model(model: Module, path: str):
+    """Save Model To File."""
+    save(model, path)

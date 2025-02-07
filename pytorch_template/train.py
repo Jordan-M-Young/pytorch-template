@@ -2,8 +2,8 @@
 
 import numpy as np
 from torch import DoubleTensor, tensor
-from torch.nn.modules.loss import _Loss
 from torch.nn import Module
+from torch.nn.modules.loss import _Loss
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 
